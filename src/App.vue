@@ -6,7 +6,6 @@ import HomeView from './views/HomeView.vue'
   <div class="common-layout">
     <HomeView/>
   </div>
-  <RouterView/>
 </template>
 
 

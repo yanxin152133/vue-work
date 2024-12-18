@@ -2,17 +2,28 @@
 import Aside from '../components/AsideView.vue'
 import Header from '../components/HeaderView.vue'
 import Main from '../components/MainView.vue'
+
 </script>
 
+
 <template>
-  <el-container>
-    <Aside/>
+  <el-container class="layout-container-demo" style="height: auto;width: auto">
+    <el-aside width="200px">
+      <Aside/>
+    </el-aside>
+
     <el-container>
-      <Header/>
-      <Main/>
+      <el-header style="text-align: right; font-size: 12px">
+        <Header/>
+      </el-header>
+
+      <el-main>
+        <Main/>
+      </el-main>
     </el-container>
   </el-container>
 </template>
+
 <style scoped>
 .layout-container-demo .el-header {
   position: relative;
@@ -41,4 +52,6 @@ import Main from '../components/MainView.vue'
   right: 20px;
 }
 </style>
+
+
 
