@@ -7,21 +7,24 @@ import Main from '../components/MainView.vue'
 
 
 <template>
-  <el-container class="layout-container-demo" style="height: auto;width: auto">
-    <el-aside width="200px">
-      <Aside/>
-    </el-aside>
+  <main>
+    <el-container class="layout-container-demo" style="height: auto;width: auto">
+      <el-aside width="200px">
+        <Aside/>
+      </el-aside>
 
-    <el-container>
-      <el-header style="text-align: right; font-size: 12px">
-        <Header/>
-      </el-header>
+      <el-container>
+        <el-header style="text-align: right; font-size: 12px">
+          <Header/>
+        </el-header>
 
-      <el-main>
-        <Main/>
-      </el-main>
+        <el-main>
+          <Main/>
+        </el-main>
+      </el-container>
     </el-container>
-  </el-container>
+  </main>
+
 </template>
 
 <style scoped>
