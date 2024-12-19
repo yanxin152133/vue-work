@@ -10,9 +10,16 @@ export default defineConfig({
         vue(),
         vueDevTools(),
     ],
+    server: {
+        host: '0.0.0.0'
+    },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
         },
     },
+    base: process.env.NODE_ENV === "development" ? "/" : "/work/", // 默认 '/'
+    build: {
+        outDir: 'work', // 默认是 'dist'
+    }
 })
